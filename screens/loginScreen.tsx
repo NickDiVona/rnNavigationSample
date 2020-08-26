@@ -11,15 +11,34 @@ const LoginScreen = (props: any) => {
         backgroundColor: 'lightgoldenrodyellow'
       }}
     >
-      <Text>Login Screen</Text>
+      <Text style={{ marginBottom: 10 }}>Login Screen</Text>
       <TouchableOpacity
         onPress={() => props.navigation.navigate('BottomTabNav')}
+        style={{
+          width: 150,
+          height: 50,
+          backgroundColor: 'lightsalmon',
+          justifyContent: 'center',
+          alignItems: 'center',
+          borderRadius: 20,
+          marginBottom: 10
+        }}
       >
         <View>
           <Text>Log in!</Text>
         </View>
       </TouchableOpacity>
-      <TouchableOpacity onPress={() => props.navigation.navigate('Forgot')}>
+      <TouchableOpacity
+        onPress={() => props.navigation.navigate('Forgot')}
+        style={{
+          width: 150,
+          height: 50,
+          backgroundColor: 'lightsalmon',
+          justifyContent: 'center',
+          alignItems: 'center',
+          borderRadius: 20
+        }}
+      >
         <View>
           <Text>Forgot password?</Text>
         </View>
