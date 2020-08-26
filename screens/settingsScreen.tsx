@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text } from 'react-native';
 import { TouchableOpacity } from 'react-native';
 
-const SettingsScreen = (props) => {
+const SettingsScreen = (props: any) => {
   return (
     <View
       style={{

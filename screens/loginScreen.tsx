@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 
-const LoginScreen = (props) => {
+const LoginScreen = (props: any) => {
   return (
     <View
       style={{
