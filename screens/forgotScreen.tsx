@@ -1,5 +1,8 @@
+//sys
 import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
+//usr
+import RoundedCustomButton from '../components/roundedCustomButton';
 
 const ForgotScreen = (props: any) => {
   return (
@@ -12,22 +15,10 @@ const ForgotScreen = (props: any) => {
       }}
     >
       <Text style={{ marginBottom: 10 }}>Forgot Screen</Text>
-      <TouchableOpacity
+      <RoundedCustomButton
         onPress={() => props.navigation.navigate('Login')}
-        style={{
-          width: 150,
-          height: 50,
-          backgroundColor: 'lightsalmon',
-          justifyContent: 'center',
-          alignItems: 'center',
-          borderRadius: 20,
-          marginBottom: 10
-        }}
-      >
-        <View>
-          <Text>Actually.... wait.</Text>
-        </View>
-      </TouchableOpacity>
+        title="Actually.... wait."
+      />
     </View>
   );
 };
