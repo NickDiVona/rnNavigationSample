@@ -2,7 +2,7 @@ import * as types from '../actionTypes';
 
 const INITIAL_STATE = { count: 0 };
 
-export default function (state = INITIAL_STATE, action: object) {
+export default function (state = INITIAL_STATE, action: any) {
   switch (action.type) {
     case types.INCREMENT_COUNT:
       return { ...state, count: state.count + 1 };
