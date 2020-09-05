@@ -11,14 +11,7 @@ const EntryScreen = () => {
   const currentCount = useSelector((state: any) => state.count.count);
 
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: 'lightblue'
-      }}
-    >
+    <View style={styles.containerStyle}>
       <Text style={styles.titleTextStyle}>Entry Screen</Text>
       <Text style={styles.currentCountTextStyle}>
         Current Count: {currentCount}
@@ -38,6 +31,12 @@ const EntryScreen = () => {
 export default EntryScreen;
 
 const styles = StyleSheet.create({
+  containerStyle: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'lightblue'
+  },
   titleTextStyle: { fontSize: 32, marginBottom: 10 },
   currentCountTextStyle: { fontSize: 24, marginBottom: 10 }
 });
